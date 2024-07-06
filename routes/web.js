@@ -12,6 +12,7 @@ import adminController from "../controllers/adminController.js";
 const router = express.Router()
  // page account
 // page account
+router.get('/', homeController.homePage);
 router.get('/login', accountController.loginPage);
 router.get('/register', accountController.registerPage);
 router.get('/forgot', accountController.forgotPage);
