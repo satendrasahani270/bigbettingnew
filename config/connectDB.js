@@ -3,7 +3,7 @@ import mysql from "mysql2/promise"
 const connection = mysql.createPool({
     host: 'localhost',
     user: 'root',
-    password: 'Dev.Clickvps.4t7',
+    password: '',
     database: '92lottery'
 });
 
