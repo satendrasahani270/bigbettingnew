@@ -125,7 +125,7 @@ const betK5D = async (req, res) => {
 
         if (!validate) {
             return res.status(200).json({
-                message: 'Đặt cược không hợp lệ',
+                message: 'Invalid bet',
                 status: false
             });
         }

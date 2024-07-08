@@ -630,7 +630,7 @@
 .home .gameList .item[data-v-432e6ed0] {
   width: 100%;
   color: #fff;
-  box-shadow: 0 0.02667rem 0.48rem 0 rgba(203, 202, 220, 0.56);
+  /* box-shadow: 0 0.02667rem 0.48rem 0 rgba(203, 202, 220, 0.56); */
   border-radius: 0.4rem;
 }
 .home .gameList .item.maskShow[data-v-432e6ed0] {

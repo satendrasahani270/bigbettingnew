@@ -190,7 +190,7 @@ const verifyCode = async(req, res) => {
             if (data.code == '00000') {
                 await connection.execute("INSERT INTO users SET phone = ?, otp = ?, veri = 0, time_otp = ? ", [phone, otp, timeEnd]);
                 return res.status(200).json({
-                    message: 'Gửi thành công',
+                    message: 'Lets sing together',
                     status: true,
                     timeStamp: timeNow,
                     timeEnd: timeEnd,
@@ -205,7 +205,7 @@ const verifyCode = async(req, res) => {
                 if (data.code == '00000') {
                     await connection.execute("UPDATE users SET otp = ?, time_otp = ? WHERE phone = ? ", [otp, timeEnd, phone]);
                     return res.status(200).json({
-                        message: 'Gửi thành công',
+                        message: 'Lets sing together',
                         status: true,
                         timeStamp: timeNow,
                         timeEnd: timeEnd,
@@ -214,7 +214,7 @@ const verifyCode = async(req, res) => {
             });
         } else {
             return res.status(200).json({
-                message: 'Gửi SMS thường xuyên',
+                message: 'Send SMS regularly',
                 status: false,
                 timeStamp: timeNow,
             });
@@ -239,7 +239,7 @@ const verifyCodePass = async(req, res) => {
     const [rows] = await connection.query('SELECT * FROM users WHERE `phone` = ? AND veri = 1', [phone]);
     if (rows.length == 0) {
         return res.status(200).json({
-            message: 'Tài khoản không tồn tại',
+            message: 'Account does not exist',
             status: false,
             timeStamp: timeNow,
         });
@@ -251,7 +251,7 @@ const verifyCodePass = async(req, res) => {
                 if (data.code == '00000') {
                     await connection.execute("UPDATE users SET otp = ?, time_otp = ? WHERE phone = ? ", [otp, timeEnd, phone]);
                     return res.status(200).json({
-                        message: 'Gửi thành công',
+                        message: 'Lets sing together',
                         status: true,
                         timeStamp: timeNow,
                         timeEnd: timeEnd,
@@ -260,7 +260,7 @@ const verifyCodePass = async(req, res) => {
             });
         } else {
             return res.status(200).json({
-                message: 'Gửi SMS thường xuyên',
+                message: 'Send SMS regularly',
                 status: false,
                 timeStamp: timeNow,
             });

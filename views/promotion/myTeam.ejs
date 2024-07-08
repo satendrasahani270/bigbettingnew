@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex,nofollow">
     <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
-    <title>79lottery</title>
+    <title>BIG BETTING</title>
     <link href="/css/promotion/app.css" rel="stylesheet" />
     <link href="/css/promotion/chunk-0_1.css" rel="stylesheet" />
     <link href="/css/promotion/chunk-0_2.css" rel="stylesheet" />
@@ -32,7 +32,7 @@
         <div data-v-7c8bbbf4="" class="mian">
             <div data-v-106b99c8="" data-v-7c8bbbf4="" class="navbar">
                 <div data-v-106b99c8="" class="navbar-left"></div>
-                <div data-v-106b99c8="" class="navbar-title"> QUẢNG BÁ ĐẠI LÝ </div>
+                <div data-v-106b99c8="" class="navbar-title"> AGENT PROMOTION</div>
                 <div data-v-106b99c8="" class="navbar-right" onclick="location.href='/promotion/bonusrecord'">
                     <div data-v-7c8bbbf4="" data-v-106b99c8="" class="c-row">
                         <i data-v-7c8bbbf4="" data-v-106b99c8="" class="van-icon van-icon-notes-o" style="font-size: 25px;">
@@ -44,37 +44,37 @@
             <div data-v-0ff6946a="" class="promotion">
                 <div data-v-0ff6946a="" class="tab">
                     <ul data-v-0ff6946a="" class="c-row c-row-between">
-                        <li data-v-7c8bbbf4="" onclick="location.href='/promotion'">Tổng quan</li>
-                        <li data-v-7c8bbbf4="" onclick="location.href='/promotion/myTeam'" class="action block-click">Đội của tôi</li>
-                        <li data-v-7c8bbbf4="" onclick="location.href='/promotion/promotionDes'">Lịch sử nhận</li>
-                        <li data-v-7c8bbbf4="" onclick="location.href='/promotion/tutorial'">Hướng dẫn</li>
+                        <li data-v-7c8bbbf4="" onclick="location.href='/promotion'">overview</li>
+                        <li data-v-7c8bbbf4="" onclick="location.href='/promotion/myTeam'" class="action block-click">My team</li>
+                        <li data-v-7c8bbbf4="" onclick="location.href='/promotion/promotionDes'">Receiving history</li>
+                        <li data-v-7c8bbbf4="" onclick="location.href='/promotion/tutorial'">Instruct</li>
                     </ul>
                 </div>
                 <div data-v-0ff6946a="" class="box">
-                    <div data-v-0ff6946a="" class="tit c-row c-row-between" id="total-mem">Đội trực tiếp(0 Mọi người)</div>
+                    <div data-v-0ff6946a="" class="tit c-row c-row-between" id="total-mem">Live Team(0 Everyone)</div>
                     <div data-v-0ff6946a="" class="c-row c-row-between p-l-15 p-r-15 m-t-5">
                         <div data-v-0ff6946a="" class="p-r-10">
                             <input data-v-0ff6946a="" type="text" maxlength="5" placeholder="UID" oninput="value=value.replace(/\D/g,'')" class="ipt">
                         </div>
                         
-                        <div data-v-0ff6946a="" class="btn c-tc">Tìm kiếm</div>
+                        <div data-v-0ff6946a="" class="btn c-tc">Search</div>
                     </div>
                     <div data-v-0ff6946a="" class="c-row number c-flex-warp">
-                        <div data-v-0ff6946a="" class="item">Tổng số tiền đặt cược:0</div>
-                        <div data-v-0ff6946a="" class="item">Tổng số tiền hoa hồng:0</div>
+                        <div data-v-0ff6946a="" class="item">Total bet amount:0</div>
+                        <div data-v-0ff6946a="" class="item">Total commission:0</div>
                     </div>
                     <div data-v-0ff6946a="" class="table">
                         <div data-v-0ff6946a="" class="hd van-row">
                             <div data-v-0ff6946a="" class="c-tc van-col van-col--4">UID</div>
-                            <div data-v-0ff6946a="" class="c-tc van-ellipsis van-col van-col--6">Tên</div>
-                            <div data-v-0ff6946a="" class="c-tc van-ellipsis van-col van-col--6">Doanh thu</div>
+                            <div data-v-0ff6946a="" class="c-tc van-ellipsis van-col van-col--6">Name</div>
+                            <div data-v-0ff6946a="" class="c-tc van-ellipsis van-col van-col--6">Revenue</div>
                             <div data-v-0ff6946a="" class="c-tc van-ellipsis van-col van-col--4">TT</div>
-                            <div data-v-0ff6946a="" class="c-tc van-ellipsis van-col van-col--4">Chi tiết</div>
+                            <div data-v-0ff6946a="" class="c-tc van-ellipsis van-col van-col--4">Detail</div>
                         </div>
                         <div data-v-0ff6946a="" class="list">
                             <div data-v-0ff6946a="" role="feed" class="van-list">
                                 <div id="van-list"></div>
-                                <div class="van-list__finished-text">Không còn nữa</div>
+                                <div class="van-list__finished-text">No more</div>
                                 <div class="van-list__placeholder"></div>
                             </div>
                         </div>
@@ -131,7 +131,7 @@
             url: "/api/webapi/myTeam",
             dataType: "json",
             success: function (response) {
-                $('#total-mem').text(`Đội trực tiếp(${response.f1.length} Mọi người)`);
+                $('#total-mem').text(`Live team(${response.f1.length}Everybody)`);
                 MemRender(response.f1)
             }
         });
