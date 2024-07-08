@@ -28,6 +28,9 @@
 .primary-color {
   color: #f1c45c !important;
 }
+.border-color-primary{
+  border-color: #f1c45c !important;
+}
 .bg-black {
   background: black !important;
 }
@@ -36,4 +39,21 @@
 }
 .text-white {
   color: white !important;
+}
+
+.golden-btn{
+  height: 1.1rem;
+  line-height: 0.8rem;
+  background-image: linear-gradient(90deg, #81672c, #f1c45c);
+  border-radius: 0.8rem;
+  color: #fff;
+  margin: 0px auto;
+  box-shadow: 9px 6px 13px black!important;
+}
+
+.border-none{
+  border-width: 0px!important;
+}
+.pl-8{
+  padding-left: 8px;
 }
